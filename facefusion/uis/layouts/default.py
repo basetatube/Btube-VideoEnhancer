@@ -23,8 +23,8 @@ def render() -> gradio.Blocks:
 					execution.render()
 					execution_thread_count.render()
 					execution_queue_count.render()
-				#with gradio.Blocks():
-				#	limit_resources.render()
+				with gradio.Blocks():
+					limit_resources.render()
 				with gradio.Blocks():
 					temp_frame.render()
 				with gradio.Blocks():
