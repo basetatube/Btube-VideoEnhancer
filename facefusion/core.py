@@ -2,7 +2,7 @@
 
 import os
 # single thread doubles cuda performance
-os.environ['OMP_NUM_THREADS'] = '3'
+os.environ['OMP_NUM_THREADS'] = '1'
 # reduce tensorflow log level
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import sys
