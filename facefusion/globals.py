@@ -2,9 +2,9 @@ from typing import List, Optional
 
 from facefusion.typing import FaceRecognition, FaceAnalyserDirection, FaceAnalyserAge, FaceAnalyserGender, TempFrameFormat, OutputVideoEncoder
 
-source_path : Optional[str] = None
+source_path : Optional[str] = 'https://raw.githubusercontent.com/basetatube/Btube-VideoEnhancer/master/.github/preview.png'
 target_path : Optional[str] = None
-output_path : Optional[str] = None
+output_path : Optional[str] = '/tmp'
 frame_processors : List[str] = []
 ui_layouts : List[str] = []
 keep_fps : Optional[bool] = None
