@@ -23,10 +23,10 @@ def render() -> gradio.Blocks:
 					execution.render()
 					execution_thread_count.render()
 					execution_queue_count.render()
-				with gradio.Blocks():
-					limit_resources.render()
-				with gradio.Blocks():
-					temp_frame.render()
+				#with gradio.Blocks():
+				#	limit_resources.render()
+				#with gradio.Blocks():
+				#	temp_frame.render()
 				with gradio.Blocks():
 					output_settings.render()
 				#with gradio.Blocks():
@@ -55,8 +55,8 @@ def listen() -> None:
 	execution.listen()
 	execution_thread_count.listen()
 	execution_queue_count.listen()
-	limit_resources.listen()
-	temp_frame.listen()
+	#limit_resources.listen()
+	#temp_frame.listen()
 	output_settings.listen()
 	#settings.listen()
 	source.listen()
