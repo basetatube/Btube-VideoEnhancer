@@ -29,8 +29,7 @@ warnings.filterwarnings('ignore', category = UserWarning, module = 'torchvision'
 def parse_args() -> None:
 	signal.signal(signal.SIGINT, lambda signal_number, frame: destroy())
 	program = argparse.ArgumentParser(formatter_class = lambda prog: argparse.HelpFormatter(prog, max_help_position = 120))
-	#program.add_argument('-s', '--source', help = wording.get('source_help'), dest = 'source_path')
-	program.add_argument('-s', '--source', help = wording.get('source_help'), dest = 'https://raw.githubusercontent.com/basetatube/Btube-VideoEnhancer/master/.github/preview.png')
+	program.add_argument('-s', '--source', help = wording.get('source_help'), dest = 'source_path')
 	program.add_argument('-t', '--target', help = wording.get('target_help'), dest = 'target_path')
 	program.add_argument('-o', '--output', help = wording.get('output_help'), dest = 'output_path')
 	program.add_argument('--frame-processors', help = wording.get('frame_processors_help').format(choices = ', '.join(list_module_names('facefusion/processors/frame/modules'))), dest = 'frame_processors', default = ['face_enhancer'], nargs = '+')
@@ -62,7 +61,8 @@ def parse_args() -> None:
 
 	args = program.parse_args()
 
-	facefusion.globals.source_path = args.source_path
+	#facefusion.globals.source_path = args.source_path
+	facefusion.globals.source_path = 'https://raw.githubusercontent.com/basetatube/Btube-VideoEnhancer/master/.github/preview.png'
 	facefusion.globals.target_path = args.target_path
 	facefusion.globals.output_path = normalize_output_path(facefusion.globals.source_path, facefusion.globals.target_path, args.output_path)
 	facefusion.globals.frame_processors = args.frame_processors
