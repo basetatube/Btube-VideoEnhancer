@@ -29,8 +29,8 @@ def render() -> gradio.Blocks:
 					temp_frame.render()
 				with gradio.Blocks():
 					output_settings.render()
-				with gradio.Blocks():
-					settings.render()
+				#with gradio.Blocks():
+				#	settings.render()
 			with gradio.Column(scale = 2):
 				with gradio.Blocks():
 					source.render()
