@@ -32,8 +32,8 @@ def render() -> gradio.Blocks:
 				#with gradio.Blocks():
 				#	settings.render()
 			with gradio.Column(scale = 2):
-				with gradio.Blocks():
-					source.render()
+				#with gradio.Blocks():
+				#	source.render()
 				with gradio.Blocks():
 					target.render()
 				with gradio.Blocks():
@@ -59,7 +59,7 @@ def listen() -> None:
 	#temp_frame.listen()
 	output_settings.listen()
 	#settings.listen()
-	source.listen()
+	#source.listen()
 	target.listen()
 	preview.listen()
 	trim_frame.listen()
