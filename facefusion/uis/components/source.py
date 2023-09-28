@@ -25,7 +25,7 @@ def render() -> None:
 			'.webp'
 		],
 		label = wording.get('source_file_label'),
-		value = facefusion.globals.source_path if is_source_image else None
+		value = facefusion.globals.source_path if is_source_image else '/content/Btube-VideoEnhancer/facefusion/preview.png'
 	)
 	SOURCE_IMAGE = gradio.Image(
 		value = SOURCE_FILE.value['name'] if is_source_image else None,
