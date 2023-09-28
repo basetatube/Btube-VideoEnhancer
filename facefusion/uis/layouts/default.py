@@ -29,8 +29,8 @@ def render() -> gradio.Blocks:
 				#	temp_frame.render()
 				with gradio.Blocks():
 					output_settings.render()
-				#with gradio.Blocks():
-				#	settings.render()
+				with gradio.Blocks():
+					settings.render()
 			with gradio.Column(scale = 2):
 				#with gradio.Blocks():
 				#	source.render()
@@ -58,7 +58,7 @@ def listen() -> None:
 	#limit_resources.listen()
 	#temp_frame.listen()
 	output_settings.listen()
-	#settings.listen()
+	settings.listen()
 	#source.listen()
 	target.listen()
 	preview.listen()
