@@ -62,7 +62,7 @@ def parse_args() -> None:
 	args = program.parse_args()
 
 	#facefusion.globals.source_path = args.source_path
-	facefusion.globals.source_path = 'https://raw.githubusercontent.com/basetatube/Btube-VideoEnhancer/master/.github/preview.png'
+	facefusion.globals.source_path = '/content/Btube-VideoEnhancer/facefusion/preview.png'
 	facefusion.globals.target_path = args.target_path
 	facefusion.globals.output_path = normalize_output_path(facefusion.globals.source_path, facefusion.globals.target_path, args.output_path)
 	facefusion.globals.frame_processors = args.frame_processors
