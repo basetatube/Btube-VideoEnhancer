@@ -7,8 +7,8 @@ from facefusion.uis import core as ui
 from facefusion.uis.typing import Update
 from facefusion.utilities import is_image
 
-SOURCE_FILE : Optional[gradio.File] = None
-SOURCE_IMAGE : Optional[gradio.Image] = '/facefusion/blank.jpg'
+SOURCE_FILE : Optional[gradio.File] = 'facefusion/preview.png'
+SOURCE_IMAGE : Optional[gradio.Image] = 'facefusion/preview.png'
 
 
 def render() -> None:
