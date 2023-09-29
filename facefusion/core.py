@@ -160,7 +160,7 @@ def process_image() -> None:
 def process_video() -> None:
 	if predict_video(facefusion.globals.target_path):
 		return
-	fps = detect_fps(facefusion.globals.target_path) if facefusion.globals.keep_fps else 25.0
+	fps = detect_fps(facefusion.globals.target_path) if facefusion.globals.keep_fps else 30.0
 	update_status(wording.get('creating_temp'))
 	create_temp(facefusion.globals.target_path)
 	# extract frames
